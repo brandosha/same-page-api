@@ -3,18 +3,18 @@ var http = require('http');
 var mysql = require('mysql');
 
 var options = {
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE,
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE
 }
 
 var server = http.createServer(function(request, response) {
   // process HTTP request. Since we're writing just WebSockets
   // server we don't have to implement anything.
-  response.end(JSON.stringify(options))
+  response.end("Hello World!")
 });
-server.listen(process.env.PORT, function() { });
+server.listen(process.env.PORT || 80, function() { });
 
 // create the server
 wsServer = new WebSocketServer({
