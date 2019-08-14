@@ -12,7 +12,7 @@ var options = {
 var server = http.createServer(function(request, response) {
   // process HTTP request. Since we're writing just WebSockets
   // server we don't have to implement anything.
-  response.write(JSON.stringify(options))
+  response.end(JSON.stringify(options))
 });
 server.listen(1337, function() { });
 
