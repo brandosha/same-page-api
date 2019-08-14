@@ -1,5 +1,11 @@
 {
+  "name": "same-page-api",
+  "version": 0.1,
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/brandosha/same-page-api.git"
+  },
   "dependencies": {
     "mysql": "2.17.1",
     "websocket": "^1.0.29"
