@@ -14,7 +14,7 @@ var server = http.createServer(function(request, response) {
   // server we don't have to implement anything.
   response.end(JSON.stringify(options))
 });
-server.listen(1337, function() { });
+server.listen(process.env.PORT, function() { });
 
 // create the server
 wsServer = new WebSocketServer({
