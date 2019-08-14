@@ -1,9 +1,9 @@
 {
   "name": "same-page-api",
   "version": "0.0.1",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "start": "main.js"
+    "start": "index.js"
   },
   "repository": {
     "type": "git",
